@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Tropics — Structured Palm Springs Acquisition</title>
+<meta property="og:title" content="The Tropics — Structured Palm Springs Acquisition">
+<meta property="og:description" content="92-key Polynesian-themed resort. $7.75M purchase, $5.5M renovation, Design Hotels rebrand. 23.4% Partner IRR / 3.2x multiple.">
+<meta property="og:image" content="https://zillaspace.github.io/The-Tropics-Hotel-Palm-Springs/tropical%20grounds%20panorama.png">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Libre+Franklin:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg-dark: #0B1416;
+  --bg-card: #111D20;
+  --bg-card-alt: #152225;
+  --white: #F5F2EC;
+  --text-muted: rgba(245,242,236,0.55);
+  --text-dim: rgba(245,242,236,0.35);
+  --teal: #2A7D80;
+  --teal-light: #3AAFB3;
+  --teal-muted: rgba(42,125,128,0.25);
+  --gold: #C9A961;
+  --gold-light: #D4BC7C;
+  --gold-muted: rgba(201,169,97,0.18);
+  --danger: #E05252;
+  --font-display: 'Cormorant Garamond', serif;
+  --font-body: 'Libre Franklin', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+  font-family: var(--font-body);
+  background: var(--bg-dark);
+  color: var(--white);
+  font-size: 15px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+::selection { background: var(--teal); color: var(--white); }
+
+/* ── Layout ── */
+.container { max-width: 960px; margin: 0 auto; padding: 0 32px; }
+.section { padding: 80px 0; }
+.section-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--teal-light);
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.section-heading {
+  font-family: var(--font-display);
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 1.15;
+  margin-bottom: 20px;
+  color: var(--white);
+}
+.section-heading em {
+  font-style: italic;
+  color: var(--gold);
+}
+.section-desc {
+  font-size: 16px;
+  color: var(--text-muted);
+  line-height: 1.7;
+  max-width: 720px;
+  margin-bottom: 48px;
+}
+
+/* ── Hero ── */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 0 64px 0;
+  background: url('https://zillaspace.github.io/The-Tropics-Hotel-Palm-Springs/assets/tropical%20grounds%20panorama.png') center/cover no-repeat;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(11,20,22,0.30) 0%, rgba(11,20,22,0.55) 40%, rgba(11,20,22,0.92) 100%);
+}
+.hero .container { position: relative; z-index: 1; }
+.hero-badge {
+  display: inline-block;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--gold);
+  border: 1px solid var(--gold-muted);
+  padding: 6px 16px;
+  border-radius: 100px;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+.hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(42px, 6vw, 72px);
+  font-weight: 700;
+  line-height: 1.05;
+  margin-bottom: 20px;
+}
+.hero-subtitle {
+  font-size: 17px;
+  color: var(--text-muted);
+  max-width: 640px;
+  line-height: 1.65;
+  margin-bottom: 40px;
+}
+.hero-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 28px;
+}
+.hero-metric { text-align: center; }
+.hero-metric-value {
+  font-family: var(--font-mono);
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 4px;
+}
+.hero-metric-value.teal { color: var(--teal-light); }
+.hero-metric-value.gold { color: var(--gold); }
+.hero-metric-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+.hero-callout {
+  font-size: 13px;
+  color: var(--text-muted);
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+/* ── Photo Break ── */
+.photo-break {
+  height: 360px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.photo-break.short { height: 240px; }
+.photo-break::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, var(--bg-dark) 0%, transparent 15%, transparent 85%, var(--bg-dark) 100%);
+}
+
+/* ── Cards & Boxes ── */
+.card-grid { display: grid; gap: 24px; }
+.card-grid.cols-2 { grid-template-columns: repeat(2, 1fr); }
+.card-grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
+.card-grid.cols-4 { grid-template-columns: repeat(4, 1fr); }
+.card {
+  background: var(--bg-card);
+  border: 1px solid rgba(255,255,255,0.04);
+  border-radius: 16px;
+  padding: 32px;
+}
+.card h4 {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: var(--white);
+}
+.card p { font-size: 14px; color: var(--text-muted); line-height: 1.65; }
+.card-number {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--teal-light);
+  font-weight: 600;
+  margin-bottom: 12px;
+  letter-spacing: 0.04em;
+}
+.flag-box {
+  background: var(--bg-card);
+  border: 1px solid rgba(255,255,255,0.04);
+  border-radius: 16px;
+  padding: 32px;
+}
+.flag-box h4 {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.flag-box p { font-size: 14px; color: var(--text-muted); line-height: 1.65; }
+
+/* ── Tables ── */
+.data-table-wrap {
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+.data-table-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 24px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--white);
+  background: rgba(255,255,255,0.02);
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+.dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+table { width: 100%; border-collapse: collapse; }
+thead th {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  font-weight: 600;
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+tbody td {
+  font-size: 14px;
+  padding: 12px 16px;
+  color: var(--white);
+  border-bottom: 1px solid rgba(255,255,255,0.03);
+}
+tbody tr:hover { background: rgba(255,255,255,0.02); }
+.row-total td { font-weight: 600; border-top: 2px solid rgba(255,255,255,0.08); }
+.table-note {
+  padding: 12px 24px;
+  font-size: 11px;
+  color: var(--text-dim);
+  border-top: 1px solid rgba(255,255,255,0.03);
+}
+
+/* ── Dark Feature Box ── */
+.dark-feature {
+  background: var(--bg-card-alt);
+  border: 1px solid rgba(255,255,255,0.04);
+  border-radius: 20px;
+  padding: 48px;
+  margin-bottom: 32px;
+}
+
+/* ── Waterfall ── */
+.waterfall-tier {
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+.waterfall-tier-head {
+  padding: 20px 28px;
+  background: rgba(255,255,255,0.03);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.waterfall-tier-body { padding: 24px 28px; }
+.waterfall-tier-split {
+  padding: 12px 28px;
+  background: rgba(42,125,128,0.08);
+  font-size: 12px;
+  color: var(--teal-light);
+  font-weight: 500;
+  text-align: center;
+}
+
+/* ── Scorecard ── */
+.score-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 32px; }
+.score-card {
+  background: var(--bg-card);
+  border: 2px solid var(--teal-muted);
+  border-radius: 16px;
+  padding: 28px;
+  text-align: center;
+}
+.score-value {
+  font-family: var(--font-mono);
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--teal-light);
+  margin-bottom: 6px;
+}
+.score-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+
+/* ── CTA ── */
+.cta-section {
+  padding: 80px 0;
+  text-align: center;
+}
+.cta-section h2 {
+  font-family: var(--font-display);
+  font-size: 42px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* ── Footer ── */
+footer {
+  padding: 40px 0;
+  border-top: 1px solid rgba(255,255,255,0.04);
+  font-size: 11px;
+  color: var(--text-dim);
+  text-align: center;
+}
+
+/* ── Reveal Animation ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .hero-metrics { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  .card-grid.cols-2, .card-grid.cols-3, .card-grid.cols-4 { grid-template-columns: 1fr; }
+  .score-grid { grid-template-columns: 1fr; }
+  .section-heading { font-size: 30px; }
+  .container { padding: 0 20px; }
+  .section { padding: 56px 0; }
+  .dark-feature { padding: 28px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     1. HERO
+     ═══════════════════════════════════════════════════════════════ -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-badge">Las Brisas Hotel Group &middot; Privileged &amp; Confidential</div>
+    <h1 class="hero-title">The Tropics</h1>
+    <p class="hero-subtitle">A 92-key Polynesian-themed resort on Palm Canyon Drive. Building-lease entry September 2026, SBA-financed purchase March 2027, $5.5M renovation, and a Year 5 refinance that returns partner capital &mdash; anchored by a 99-year Agua Caliente tribal ground lease.</p>
+
+    <div class="hero-metrics">
+      <div class="hero-metric">
+        <div class="hero-metric-value">$7.75M</div>
+        <div class="hero-metric-label">Purchase Price</div>
+      </div>
+      <div class="hero-metric">
+        <div class="hero-metric-value">$5.5M</div>
+        <div class="hero-metric-label">Renovation Budget</div>
+      </div>
+      <div class="hero-metric">
+        <div class="hero-metric-value gold">$2.63M</div>
+        <div class="hero-metric-label">Total Partner Capital</div>
+      </div>
+      <div class="hero-metric">
+        <div class="hero-metric-value teal">23.4%</div>
+        <div class="hero-metric-label">Partner Internal Rate of Return</div>
+      </div>
+      <div class="hero-metric">
+        <div class="hero-metric-value teal">3.2&times;</div>
+        <div class="hero-metric-label">Cash-on-Cash Multiple (Year 5)</div>
+      </div>
+      <div class="hero-metric">
+        <div class="hero-metric-value teal">$400K+</div>
+        <div class="hero-metric-label">Annual LP Cash Flow After Refi</div>
+      </div>
+    </div>
+
+    <div class="hero-callout">
+      <strong>Partner (Limited Partner):</strong> $2.0M loan + $627K equity (49%) &nbsp;&nbsp;|&nbsp;&nbsp; <strong>LBHG (General Partner):</strong> ~$650K equity (51%) + guarantee + full operating control
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════
+     2. THE HOOK — Rat Pack History / Largest Pool / Unique Position
+     ═══════════════════════════════════════════════════════════════ -->
+<div class="photo-break" style="background-image:url('https://zillaspace.github.io/The-Tropics-Hotel-Palm-Springs/assets/desert%20night%20pool.png');"></div>
+
+<section class="section">
+  <div class="container">
+    <div class="section-label">The Opportunity</div>
+    <h2 class="section-heading">Rat Pack roots. Largest pool in <em>Palm Springs.</em></h2>
+    <p class="section-desc">Originally opened in 1964 as "The Tropics" by hotelier Ken Kimes, this property was a regular haunt of the Rat Pack during Palm Springs' golden era. It features the largest swimming pool of any hotel in the city &mdash; a 100,000-gallon signature amenity &mdash; and retains its original Polynesian A-frame architecture, tiki carvings, and courtyard layout. In a market dominated by cookie-cutter boutique conversions, The Tropics is irreplaceable.</p>
+
+    <div class="card-grid cols-3 reveal">
+      <div class="card">
+        <div class="card-number">01</div>
+        <h4>One of a Kind</h4>
+        <p>Authentic 1964 Polynesian architecture &mdash; original A-frame entrance, hand-carved tikis, courtyard layout. There is no comparable asset in the Coachella Valley.</p>
+      </div>
+      <div class="card">
+        <div class="card-number">02</div>
+        <h4>100,000-Gallon Pool</h4>
+        <p>The largest hotel swimming pool in Palm Springs. A proven draw for leisure travelers, event bookings, and social media visibility year-round.</p>
+      </div>
+      <div class="card">
+        <div class="card-number">03</div>
+        <h4>Cultural Cachet</h4>
+        <p>Rat Pack history. Annual Tiki Caliente festival. Featured in mid-century design tours. A built-in audience of enthusiasts and repeat visitors that money cannot buy.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════
+     3. WHY NOW
+     ═══════════════════════════════════════════════════════════════ -->
+<div class="photo-break short" style="background-image:url('https://zillaspace.github.io/The-Tropics-Hotel-Palm-Springs/assets/a-frame-tiki.png');"></div>
+
+<section class="section">
+  <div class="container">
+    <div class="section-label">Timing</div>
+    <h2 class="section-heading">Why <em>now</em></h2>
+    <p class="section-desc">Discounted basis, a local operating edge, macro tailwinds, and a phased entry structure create an unusually asymmetric entry point.</p>
+
+    <div class="card-grid cols-2 reveal">
+      <div class="card">
+        <div class="card-number">01</div>
+        <h4>Below-Replacement Basis</h4>
+        <p>The Tropics is available at $7.75M &mdash; approximately $84K per key. The Ace Hotel &amp; Swim Club, two doors down, traded at ~$335K per key in 2022. New-build cost in Palm Springs exceeds $350K per key. Even after a $5.5M renovation, the all-in basis of ~$157K per key creates meaningful built-in downside protection.</p>
+      </div>
+      <div class="card">
+        <div class="card-number">02</div>
+        <h4>Local Operating Edge</h4>
+        <p>LBHG operates two hotels within 15 minutes of this property. The Johnston family has a 25-year track record in the Coachella Valley with established vendor relationships, staffing pipelines, and market knowledge that an outside buyer cannot replicate.</p>
+      </div>
+      <div class="card">
+        <div class="card-number">03</div>
+        <h4>Palm Springs Tailwinds</h4>
+        <p>Coachella / Stagecoach drive annual compression. L&rsquo;Horizon rates now reach ~$4,000 per night. Short-term rental regulations continue to tighten, pushing demand back into licensed hotels. The boutique segment is supply-constrained with no new inventory pipeline.</p>
+      </div>
+      <div class="card">
+        <div class="card-number">04</div>
+        <h4>Phased Entry, Defined Exit</h4>
+        <p>Building-lease takeover September 2026 provides operational control before the SBA purchase in March 2027. The $5.5M renovation phases through 2027&ndash;2028, with an independent rebrand targeted for January 2028. Year 5 refinance returns partner capital; Year 5 exit is the base case.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════
+     4. DEAL STRUCTURE
+     ═══════════════════════════════════════════════════════════════ -->
+<section class="section" style="background:var(--bg-card);">
+  <div class="container">
+    <div class="section-label">Structure</div>
+    <h2 class="section-heading">Transaction structure &amp; <em>partner economics</em></h2>
+    <p class="section-desc">Building-lease takeover in September 2026, SBA-financed purchase in March 2027, $5.5M phased renovation, and an independent boutique rebrand by January 2028. Partner capital ($2.0M loan + $627K equity) earns 8% cumulative interest on the loan beginning in Year 2 and equity distributions beginning in Year 4. The $2.0M partner loan is repaid first at the Year 5 refinance.</p>
+
+    <div class="card-grid cols-2 reveal" style="margin-bottom:48px;">
+      <div class="flag-box">
+        <h4 style="color:var(--teal-light);">Transaction Structure</h4>
+        <p><strong>Purchase price:</strong> $7.75M<br>
+        <strong>Building lease:</strong> September 2026 (operational control begins)<br>
+        <strong>SBA purchase close:</strong> March 2027<br>
+        <strong>Debt structure:</strong> 50% Senior ($6.98M) + 30% SBA ($4.19M)<br>
+        <strong>Bridge financing:</strong> Short-term bridge loan covers the gap between building-lease entry and SBA close; retired at SBA funding<br>
+        <strong>Ground lease:</strong> 99-year Agua Caliente tribal trust land (BIA)</p>
+      </div>
+      <div class="flag-box">
+        <h4 style="color:var(--gold);">Partner Economics</h4>
+        <p><strong>Partner loan:</strong> $2.0M at 8% cumulative interest, starting Year 2 (first full operating year). Repaid first at Year 5 refinance.<br>
+        <strong>Partner equity:</strong> $627K for 49% ownership. No preferred return. No distributions until Year 4.<br>
+        <strong>LBHG equity:</strong> ~$650K for 51% ownership. No promote.<br>
+        <strong>Pre-Year 4 cash flow:</strong> Reinvested into ROI projects (patios, lobby, amenities).</p>
+      </div>
+    </div>
+
+    <!-- Sources & Uses -->
+    <div class="reveal">
+      <div class="data-table-wrap" style="border:2px solid var(--teal-muted);">
+        <div class="data-table-title"><div class="dot" style="background:var(--teal);"></div>Sources &amp; Uses ($000s)</div>
+        <table>
+          <thead>
+            <tr><th>Sources</th><th style="text-align:right;">Amount</th><th style="width:40px;"></th><th>Uses</th><th style="text-align:right;">Amount</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>First Mortgage (50%)</td><td style="text-align:right;font-family:var(--font-mono);">$6,983</td>
+              <td></td>
+              <td>Purchase Price</td><td style="text-align:right;font-family:var(--font-mono);">$7,750</td>
+            </tr>
+            <tr>
+              <td>SBA Loan (30%)</td><td style="text-align:right;font-family:var(--font-mono);">$4,190</td>
+              <td></td>
+              <td>Renovation</td><td style="text-align:right;font-family:var(--font-mono);">$5,500</td>
+            </tr>
+            <tr>
+              <td>Bridge Loan</td><td style="text-align:right;font-family:var(--font-mono);">$4,190</td>
+              <td></td>
+              <td>Financing Costs</td><td style="text-align:right;font-family:var(--font-mono);">$616</td>
+            </tr>
+            <tr>
+              <td>Partner Loan (8%)</td><td style="text-align:right;font-family:var(--font-mono);">$2,000</td>
+              <td></td>
+              <td>Legal &amp; Closing</td><td style="text-align:right;font-family:var(--font-mono);">$100</td>
+            </tr>
+            <tr>
+              <td>LP Equity (49%)</td><td style="text-align:right;font-family:var(--font-mono);">$627</td>
+              <td></td>
+              <td>Reserves (Working Capital)</td><td style="text-align:right;font-family:var(--font-mono);">$487</td>
+            </tr>
+            <tr>
+              <td>GP Equity (51%)</td><td style="text-align:right;font-family:var(--font-mono);">$650</td>
+              <td></td>
+              <td>&nbsp;</td><td></td>
+            </tr>
+            <tr class="row-total">
+              <td>Total Sources</td><td style="text-align:right;font-family:var(--font-mono);">$18,640</td>
+              <td></td>
+              <td>Total Uses</td><td style="text-align:right;font-family:var(--font-mono);">$14,453</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="table-note">Bridge loan is retired upon SBA funding. Reserves cannot be financed per SBA guidelines. Total project cost: $14.5M (~$157K per key).</div>
+      </div>
+    </div>
+
+    <!-- Debt Service Callout -->
+    <div class="reveal" style="margin-top:24px;">
+      <div style="background:rgba(42,125,128,0.06);border:1px solid var(--teal-muted);border-radius:12px;padding:20px 28px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;">
+        <div><span style="font-size:12px;color:var(--text-muted);">Senior + SBA Debt Service</span><br><span style="font-family:var(--font-mono);font-size:18px;font-weight:600;">$929K/yr</span></div>
+        <div><span style="font-size:12px;color:var(--text-muted);">Bridge Interest (pre-SBA)</span><br><span style="font-family:var(--font-mono);font-size:18px;font-weight:600;">$153K</span></div>
+        <div><span style="font-size:12px;color:var(--text-muted);">Partner Loan Interest (from Y2)</span><br><span style="font-family:var(--font-mono);font-size:18px;font-weight:600;">$160K/yr</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════
+     5. INVESTMENT TERMS — THE CRITICAL UPDATE
+     ═══════════════════════════════════════════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="section-label">Investment Terms</div>
+    <h2 class="section-heading">Simple structure. <em>Aligned incentives.</em></h2>
+    <p class="section-desc">No promote. No preferred return on equity. No complex waterfall. LBHG and the limited partner invest side-by-side. The partner loan earns a fixed 8% cumulative return and is repaid first.</p>
+
+    <div class="card-grid cols-3 reveal" style="margin-bottom:48px;">
+      <div class="card" style="border-color:var(--teal-muted);">
+        <h4 style="color:var(--teal-light);">Partner Loan</h4>
+        <p style="font-family:var(--font-mono);font-size:22px;color:var(--white);margin-bottom:12px;">$2.0M</p>
+        <p>8% cumulative interest beginning Year 2 (first full operating year). Principal repaid first at Year 5 refinance. Senior to all equity distributions.</p>
+      </div>
+      <div class="card" style="border-color:var(--gold-muted);">
+        <h4 style="color:var(--gold);">Partner Equity (LP)</h4>
+        <p style="font-family:var(--font-mono);font-size:22px;color:var(--white);margin-bottom:12px;">$627K &rarr; 49%</p>
+        <p>No preferred return. No distributions until Year 4. Pro-rata share of operating cash flow and exit proceeds after partner loan is retired.</p>
+      </div>
+      <div class="card" style="border-color:rgba(255,255,255,0.08);">
+        <h4>LBHG Equity (GP)</h4>
+        <p style="font-family:var(--font-mono);font-size:22px;color:var(--white);margin-bottom:12px;">~$650K &rarr; 51%</p>
+        <p>Operating guarantee. Full management responsibility. No promote. Same distribution timing as LP. Aligned incentives throughout the hold.</p>
+      </div>
+    </div>
+
+    <!-- Return Summary -->
+    <div class="reveal">
+      <div style="background:var(--bg-card-alt);border:2px solid var(--teal-muted);border-radius:20px;padding:40px;">
+        <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.12em;color:var(--teal-light);font-weight:600;margin-bottom:20px;">Partner Return Summary &mdash; $2.63M Total Investment</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:20px;margin-bottom:24px;">
+          <div>
+            <div style="font-size:12px;color:var(--text-muted);margin-bottom:4px;">Year 2&ndash;4 Loan Interest</div>
+            <div style="font-family:var(--font-mono);font-size:20px;font-weight:600;color:var(--gold);">$480K</div>
+          </div>
+          <div>
+            <div style="font-size:12px;color:var(--text-muted);margin-bottom:4px;">Year 4 Equity Distribution</div>
+            <div style="font-family:var(--font-mono);font-size:20px;font-weight:600;color:var(--white);">$298K</div>
+          </div>
+          <div>
+            <div style="font-size:12px;color:var(--text-muted);margin-bottom:4px;">Year 5 Refi Proceeds</div>
+            <div style="font-family:var(--font-mono);font-size:20px;font-weight:600;color:var(--teal-light);">$3,109K</div>
+          </div>
+          <div>
+            <div style="font-size:12px;color:var(--text-muted);margin-bottom:4px;">Year 5 Exit Proceeds</div>
+            <div style="font-family:var(--font-mono);font-size:20px;font-weight:600;color:var(--teal-light);">$4,892K</div>
+          </div>
+        </div>
+        <div style="font-size:12px;color:var(--text-dim);line-height:1.6;">Partner loan ($2.0M) is repaid in full at Year 5 refinance before any equity distribution. LP continues to receive $400K+ per year in operating cash flow distributions through exit.</div>
+      </div>
+    </div>
+
+    <div class="score-grid reveal">
+      <div class="score-card">
+        <div class="score-value">23.4%</div>
+        <div class="score-label">Partner Internal Rate of Return</div>
+      </div>
+      <div class="score-card">
+        <div class="score-value">3.2&times;</div>
+        <div class="score-label">Cash-on-Cash Multiple</div>
+      </div>
+      <div class="score-card">
+        <div class="score-value">$400K+</div>
+        <div class="score-label">Annual LP Cash Flow (Post-Refi)</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════
+     6. PROFORMA
+     ═══════════════════════════════════════════════════════════════ -->
+<section class="section" style="background:var(--bg-card);">
+  <div class="container">
+    <div class="section-label">Financials</div>
+    <h2 class="section-heading">Base case <em>proforma</em></h2>
+    <p class="section-desc">Five-year proforma from the LBHG financial model (April 2026). Year 1 is the first full operating year (2027). Independent boutique rebrand launches January 2028 (Year 2). FF&amp;E reserve (4%) begins Year 3.</p>
+
+    <div class="reveal">
+      <div class="data-table-wrap" style="border:2px solid var(--teal-muted);">
+        <div class="data-table-title"><div class="dot" style="background:var(--teal);"></div>Base Case &mdash; 23.4% Partner IRR &middot; 3.2&times; Multiple</div>
+        <table>
+          <thead>
+            <tr>
+              <th>($000s)</th>
+              <th style="text-align:right;">Stub<br><small>2026</small></th>
+              <th style="text-align:right;">Y1<br><small>2027</small></th>
+              <th style="text-align:right;">Y2<br><small>2028</small></th>
+              <th style="text-align:right;">Y3<br><small>2029</small></th>
+              <th style="text-align:right;">Y4 (Refi)<br><small>2030</small></th>
+              <th style="text-align:right;">Y5 (Exit)<br><small>2031</small></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Occupancy</td><td style="text-align:right;">45%</td><td style="text-align:right;">50%</td><td style="text-align:right;">60%</td><td style="text-align:right;">65%</td><td style="text-align:right;">70%</td><td style="text-align:right;">75%</td></tr>
+            <tr><td>ADR</td><td style="text-align:right;">$142</td><td style="text-align:right;">$162</td><td style="text-align:right;">$189</td><td style="text-align:right;">$214</td><td style="text-align:right;">$230</td><td style="text-align:right;">$237</td></tr>
+            <tr><td>RevPAR</td><td style="text-align:right;">$64</td><td style="text-align:right;">$81</td><td style="text-align:right;">$113</td><td style="text-align:right;">$139</td><td style="text-align:right;">$161</td><td style="text-align:right;">$178</td></tr>
+            <tr style="height:6px;"><td colspan="7" style="border:none;"></td></tr>
+            <tr><td>Total Revenue</td><td style="text-align:right;">$1,455</td><td style="text-align:right;">$3,519</td><td style="text-align:right;">$5,240</td><td style="text-align:right;">$6,626</td><td style="text-align:right;">$8,462</td><td style="text-align:right;">$7,952</td></tr>
+            <tr><td>GOP</td><td style="text-align:right;">$157</td><td style="text-align:right;">$732</td><td style="text-align:right;">$1,503</td><td style="text-align:right;">$2,305</td><td style="text-align:right;">$2,914</td><td style="text-align:right;">$3,182</td></tr>
+            <tr class="row-total"><td>NOI</td><td style="text-align:right;color:var(--teal-light);">$10</td><td style="text-align:right;color:var(--teal-light);">$228</td><td style="text-align:right;color:var(--teal-light);">$875</td><td style="text-align:right;color:var(--teal-light);">$1,239</td><td style="text-align:right;color:var(--teal-light);">$1,698</td><td style="text-align:right;color:var(--teal-light);">$2,025</td></tr>
+            <tr style="height:6px;"><td colspan="7" style="border:none;"></td></tr>
+            <tr><td>Debt Service</td><td style="text-align:right;">($505)</td><td style="text-align:right;">($929)</td><td style="text-align:right;">($929)</td><td style="text-align:right;">($929)</td><td style="text-align:right;">($929)</td><td style="text-align:right;">($929)</td></tr>
+            <tr class="row-total"><td>Net Cash Flow</td><td style="text-align:right;color:var(--gold);">($495)</td><td style="text-align:right;color:var(--gold);">($701)</td><td style="text-align:right;color:var(--gold);">($54)</td><td style="text-align:right;color:var(--gold);">$310</td><td style="text-align:right;color:var(--gold);">$769</td><td style="text-align:right;color:var(--gold);">$863</td></tr>
+            <tr><td>DSCR</td><td style="text-align:right;">0.02x</td><td style="text-align:right;">0.25x</td><td style="text-align:right;">0.94x</td><td style="text-align:right;">1.33x</td><td style="text-align:right;">1.83x</td><td style="text-align:right;">2.18x</td></tr>
+          </tbody>
+        </table>
+        <div class="table-note">Stub = Sep&ndash;Dec 2026 (4 months). Year 1 = first full operating year. NOI is after FF&amp;E reserve (4% from Y3) and ground lease. DSCR calculated on senior + SBA debt service only.</div>
+      </div>
+    </div>
+
+    <!-- Cash Flow Callouts -->
+    <div class="reveal" style="margin-top:24px;">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;">
+        <div style="background:rgba(42,125,128,0.06);border:1px solid var(--teal-muted);border-radius:12px;padding:20px 28px;">
+          <div style="font-size:12px;color:var(--teal-light);font-weight:600;margin-bottom:8px;">DSCR Trajectory</div>
+          <div style="font-size:14px;color:var(--text-muted);line-height:1.7;">Year 2: 0.94x &rarr; Year 3: 1.33x &rarr; Year 4: 1.83x &rarr; Year 5: 2.18x. Comfortably above institutional 1.25x threshold from Year 3 forward.</div>
+        </div>
+        <div style="background:rgba(201,169,97,0.06);border:1px solid var(--gold-muted);border-radius:12px;padding:20px 28px;">
+          <div style="font-size:12px;color:var(--gold);font-weight:600;margin-bottom:8px;">Net Cash Flow to Equity</div>
+          <div style="font-size:14px;color:var(--text-muted);line-height:1.7;">Y3: $310K &rarr; Y4: $769K &rarr; Y5: $863K. Distributions begin Year 4 after partner loan interest is current. Pre-Y4 cash flow reinvested into ROI projects.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════
+     7. RENOVATION / DEVELOPMENT PLAN
+     ═══════════════════════════════════════════════════════════════ -->
+<div class="photo-break short" style="background-image:url('https://zillaspace.github.io/The-Tropics-Hotel-Palm-Springs/assets/tiki-courtyard.png');"></div>
+
+<section class="section">
+  <div class="container">
+    <div class="section-label">Capex Plan</div>
+    <h2 class="section-heading">$5.5M renovation. <em>Four phases.</em></h2>
+    <p class="section-desc">Priority scope covers rooms, spa, and tiki bar in 2027 with the independent rebrand in January 2028. Patios and lobby redevelopment ($1.2M) funded separately from FF&amp;E reserves and operating cash flow.</p>
+
+    <div class="card-grid cols-4 reveal">
+      <div class="card">
+        <div style="font-size:11px;color:var(--teal-light);font-weight:600;margin-bottom:8px;">PHASE 1</div>
+        <div style="font-family:var(--font-mono);font-size:16px;color:var(--white);margin-bottom:4px;">$650K</div>
+        <p style="font-size:12px;">Jul&ndash;Dec 2026. Pre-opening, FF&amp;E procurement, design &amp; permitting.</p>
+      </div>
+      <div class="card">
+        <div style="font-size:11px;color:var(--teal-light);font-weight:600;margin-bottom:8px;">PHASE 2</div>
+        <div style="font-family:var(--font-mono);font-size:16px;color:var(--white);margin-bottom:4px;">$2.1M</div>
+        <p style="font-size:12px;">Jan&ndash;Apr 2027. Rooms renovation, pool deck, common areas.</p>
+      </div>
+      <div class="card">
+        <div style="font-size:11px;color:var(--teal-light);font-weight:600;margin-bottom:8px;">PHASE 3</div>
+        <div style="font-family:var(--font-mono);font-size:16px;color:var(--white);margin-bottom:4px;">$2.5M</div>
+        <p style="font-size:12px;">May&ndash;Dec 2027. Spa, tiki bar, landscaping, signage. Rebrand Jan 2028.</p>
+      </div>
+      <div class="card">
+        <div style="font-size:11px;color:var(--gold);font-weight:600;margin-bottom:8px;">PHASE 4</div>
+        <div style="font-family:var(--font-mono);font-size:16px;color:var(--white);margin-bottom:4px;">$200K</div>
+        <p style="font-size:12px;">Jun&ndash;Sep 2028. Final punch list, technology upgrades, seasonal prep.</p>
+      </div>
+    </div>
+
+    <div class="reveal" style="margin-top:24px;">
+      <div style="font-size:12px;color:var(--text-dim);padding:16px 0;border-top:1px solid rgba(255,255,255,0.04);">ROI projects (patios, lobby, additional amenities) budgeted at $1.2M, funded from FF&amp;E reserves and operating cash flow &mdash; not from the initial capital raise.</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════
+     8. REFINANCE & EXIT
+     ═══════════════════════════════════════════════════════════════ -->
+<section class="section" style="background:var(--bg-card);">
+  <div class="container">
+    <div class="section-label">Exit Strategy</div>
+    <h2 class="section-heading">Year 4 refinance. <em>Year 5 exit.</em></h2>
+    <p class="section-desc">Year 4 refinance at 8.5% cap rate and 50% loan-to-value returns partner capital. Year 5 disposition is the base-case exit. Partner continues to receive $400K+ per year in operating distributions through exit.</p>
+
+    <div class="reveal" style="margin-bottom:48px;">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;">
+
+        <!-- Refi -->
+        <div style="background:rgba(42,125,128,0.06);border:2px solid var(--teal-muted);border-radius:20px;padding:36px;">
+          <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.10em;color:var(--teal-light);font-weight:600;margin-bottom:20px;">Year 4 Refinance (2030)</div>
+          <div style="display:flex;flex-direction:column;gap:8px;">
+            <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.04);"><span style="font-size:13px;color:var(--text-muted);">Year 4 NOI</span><span style="font-family:var(--font-mono);font-size:15px;">$1,698K</span></div>
+            <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.04);"><span style="font-size:13px;color:var(--text-muted);">Property Value (8.5% cap)</span><span style="font-family:var(--font-mono);font-size:15px;">$20.0M</span></div>
+            <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.04);"><span style="font-size:13px;color:var(--text-muted);">New Loan (50% LTV)</span><span style="font-family:var(--font-mono);font-size:15px;">$10.0M</span></div>
+            <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.04);"><span style="font-size:13px;color:var(--text-muted);">Retire Existing Debt</span><span style="font-family:var(--font-mono);font-size:15px;">($6.5M)</span></div>
+            <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.04);"><span style="font-size:13px;color:var(--text-muted);">Repay Partner Loan</span><span style="font-family:var(--font-mono);font-size:15px;color:var(--gold);">($2.0M)</span></div>
+            <div style="display:flex;justify-content:space-between;padding:8px 0;"><span style="font-size:13px;color:var(--teal-light);font-weight:600;">Net Refi Proceeds</span><span style="font-family:var(--font-mono);font-size:15px;font-weight:600;color:var(--teal-light);">$1.3M</span></div>
+          </div>
+        </div>
+
+        <!-- Exit -->
+        <div style="background:rgba(201,169,97,0.06);border:2px solid var(--gold-muted);border-radius:20px;padding:36px;">
+          <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.10em;color:var(--gold);font-weight:600;margin-bottom:20px;">Year 5 Exit (2031)</div>
+          <div style="display:flex;flex-direction:column;gap:8px;">
+            <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.04);"><span style="font-size:13px;color:var(--text-muted);">Year 5 NOI</span><span style="font-family:var(--font-mono);font-size:15px;">$2,025K</span></div>
+            <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.04);"><span style="font-size:13px;color:var(--text-muted);">Sale Price (8.5% cap)</span><span style="font-family:var(--font-mono);font-size:15px;">$23.8M</span></div>
+            <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.04);"><span style="font-size:13px;color:var(--text-muted);">Disposition Costs (4%)</span><span style="font-family:var(--font-mono);font-size:15px;">($953K)</span></div>
+            <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.04);"><span style="font-size:13px;color:var(--text-muted);">Retire Refi Loan</span><span style="font-family:var(--font-mono);font-size:15px;">($10.0M)</span></div>
+            <div style="display:flex;justify-content:space-between;padding:8px 0;"><span style="font-size:13px;color:var(--gold);font-weight:600;">Net Exit Proceeds to Equity</span><span style="font-family:var(--font-mono);font-size:15px;font-weight:600;color:var(--gold);">~$9.1M</span></div>
+          </div>
+          <div style="font-size:11px;color:var(--text-dim);margin-top:12px;">Disposition costs include broker commissions and transfer costs. LP share (49%) of net exit proceeds: ~$4.5M.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sensitivity Matrix -->
+    <div class="reveal">
+      <div class="data-table-wrap" style="border:2px solid var(--gold-muted);">
+        <div class="data-table-title"><div class="dot" style="background:var(--gold);"></div>Sensitivity Analysis &mdash; Partner Internal Rate of Return by NOI &amp; Residual Cap Rate</div>
+        <table>
+          <thead><tr><th></th><th style="text-align:center;">8.0% Cap</th><th style="text-align:center;color:var(--teal-light);font-weight:700;">8.5% Cap (Base)</th><th style="text-align:center;">9.0% Cap</th></tr></thead>
+          <tbody>
+            <tr><td style="font-weight:600;">NOI &minus;10%</td><td style="text-align:center;">20.1%</td><td style="text-align:center;">18.4%</td><td style="text-align:center;">16.9%</td></tr>
+            <tr><td style="font-weight:600;color:var(--teal-light);">Base Case NOI</td><td style="text-align:center;">25.8%</td><td style="text-align:center;font-weight:700;color:var(--teal-light);">23.4%</td><td style="text-align:center;">21.3%</td></tr>
+            <tr><td style="font-weight:600;">NOI +10%</td><td style="text-align:center;">31.2%</td><td style="text-align:center;">28.3%</td><td style="text-align:center;">25.7%</td></tr>
+          </tbody>
+        </table>
+        <div class="table-note">Illustrative sensitivity framework. NOI scenarios apply &plusmn;10% to stabilized NOI. Residual cap rate applies to both refinance valuation and exit pricing. All scenarios maintain debt service coverage above 1.25x.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════
+     9. MARKET CONTEXT
+     ═══════════════════════════════════════════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="section-label">Market</div>
+    <h2 class="section-heading">Palm Springs <em>competitive set</em></h2>
+    <p class="section-desc">The Tropics competes in an undersupplied boutique segment where demand consistently outpaces inventory. Comparable properties trade at significant premiums to the proposed acquisition basis.</p>
+
+    <div class="reveal">
+      <div class="data-table-wrap">
+        <div class="data-table-title"><div class="dot" style="background:var(--gold);"></div>Transaction &amp; Rate Comparables</div>
+        <table>
+          <thead><tr><th>Property</th><th style="text-align:right;">Keys</th><th style="text-align:right;">BAR Rate</th><th style="text-align:right;">Price / Key</th><th>Notes</th></tr></thead>
+          <tbody>
+            <tr><td style="color:var(--gold);">The Tropics (Proposed)</td><td style="text-align:right;">92</td><td style="text-align:right;">TBD</td><td style="text-align:right;font-family:var(--font-mono);">$84K</td><td>Current acquisition basis</td></tr>
+            <tr><td>Ace Hotel &amp; Swim Club</td><td style="text-align:right;">179</td><td style="text-align:right;">$350&ndash;$550</td><td style="text-align:right;font-family:var(--font-mono);">$335K</td><td>Oct 2022 sale to JRK Property Holdings at ~$60M</td></tr>
+            <tr><td>L&rsquo;Horizon Resort &amp; Spa</td><td style="text-align:right;">25</td><td style="text-align:right;">$1,200&ndash;$4,000</td><td style="text-align:right;font-family:var(--font-mono);">&mdash;</td><td>Ultra-luxury. Peak rates ~$4K/night.</td></tr>
+            <tr><td>The Saguaro</td><td style="text-align:right;">244</td><td style="text-align:right;">$250&ndash;$450</td><td style="text-align:right;font-family:var(--font-mono);">&mdash;</td><td>Lifestyle boutique. Festival-season compression.</td></tr>
+            <tr><td>Arrive Palm Springs</td><td style="text-align:right;">32</td><td style="text-align:right;">$300&ndash;$500</td><td style="text-align:right;font-family:var(--font-mono);">&mdash;</td><td>Boutique independent. High-design repositioning.</td></tr>
+          </tbody>
+        </table>
+        <div class="table-note">BAR = Best Available Rate (published rack rates, not negotiated). Source: CoStar, STR, public filings. Palm Springs boutique comps as of 2024&ndash;2025.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════
+     10. LBHG TRACK RECORD
+     ═══════════════════════════════════════════════════════════════ -->
+<section class="section" style="background:var(--bg-card);">
+  <div class="container">
+    <div class="section-label">Operator</div>
+    <h2 class="section-heading">Las Brisas Hotel Group <em>track record</em></h2>
+    <p class="section-desc">The Johnston family brings 25+ years of hospitality operating experience in the Coachella Valley and Southern California, with a portfolio spanning select-service, boutique, and luxury properties.</p>
+
+    <div class="reveal">
+      <div class="data-table-wrap">
+        <div class="data-table-title"><div class="dot" style="background:var(--teal);"></div>Operating Portfolio</div>
+        <table>
+          <thead><tr><th>Property</th><th>Type</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td>Hampton Inn Palm Springs</td><td>Select-Service (114 keys)</td><td>Operating</td></tr>
+            <tr><td>Hampton Inn Riverside</td><td>Select-Service</td><td>Operating</td></tr>
+            <tr><td>Relais &amp; Ch&acirc;teaux Hotel (1)</td><td>Luxury Boutique</td><td>Operating</td></tr>
+            <tr><td>Relais &amp; Ch&acirc;teaux Hotel (2)</td><td>Luxury Boutique</td><td>Operating</td></tr>
+            <tr><td>Michelin Star Restaurant</td><td>Fine Dining</td><td>Operating</td></tr>
+          </tbody>
+        </table>
+        <div class="table-note">LBHG provides personal guarantee on all debt and operational shortfalls during the renovation period.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════
+     11. CTA
+     ═══════════════════════════════════════════════════════════════ -->
+<section class="cta-section">
+  <div class="container">
+    <h2>The Tropics</h2>
+    <p style="font-size:17px;color:var(--text-muted);max-width:600px;margin:0 auto 32px;">92 keys &middot; Palm Canyon Drive &middot; $7.75M purchase &middot; $5.5M renovation &middot; 23.4% partner IRR &middot; 3.2&times; multiple &middot; Year 5 exit</p>
+    <div style="font-size:13px;color:var(--text-dim);">Las Brisas Hotel Group &nbsp;|&nbsp; Privileged &amp; Confidential &nbsp;|&nbsp; April 2026</div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════
+     12. SOURCES
+     ═══════════════════════════════════════════════════════════════ -->
+<section class="section" style="padding:40px 0;">
+  <div class="container">
+    <div style="font-size:11px;color:var(--text-dim);line-height:1.8;">
+      <strong style="color:var(--text-muted);">Sources:</strong> LBHG internal financial model (Apr 2026). STR Custom Trend Report #1577852 (Palm Springs comp set). CoStar transaction comps (Ace Hotel sale, Oct 2022). Marcus &amp; Millichap (broker). Refi assumptions: 6.5% rate, 25-year amortization, 50% LTV, 1% origination + 1% prepayment penalty. Exit: 4% disposition costs. All projections are forward-looking estimates and subject to change.
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    Updated April 2026 &nbsp;|&nbsp; 92 Keys &middot; $7.75M Purchase &middot; $5.5M Renovation &middot; 23.4% Partner IRR &middot; 3.2&times; &middot; Year 5 Exit
+  </div>
+</footer>
+
+<script>
+// Reveal on scroll
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+}, { threshold: 0.12 });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
